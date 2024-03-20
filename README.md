@@ -13,11 +13,11 @@ Create an ESP32 project using the ESP32CAM.
 
 
 ## Link to Documentation Followed
-- [GitHub - martin-ger/esp32_nat_router](https://github.com/martin-ger/esp32_nat_router)
+- [GitHub - martin-ger/esp32_nat_router](https://randomnerdtutorials.com/send-sms-esp32-twilio/)
 
-##### Youtube Video 1: 
+##### Youtube Video 1: - [Send an SMS from ESP32 (ft. Twilio)] (https://www.youtube.com/watch?v=SP4pvYCQAfc)
 
-##### Youtube Video 2: 
+##### Youtube Video 2:  
 
 ##### Other Links: 
 
