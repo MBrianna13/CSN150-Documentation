@@ -52,7 +52,10 @@ You must keep in mind that every number that you want to send a SMS must be veri
 22. Now we get to the fun part where send SMS using ESP32.
 23. First you want to start off by going to Arduino, click on Sketch > Include Library > Manage Libraries search up twlio-esp32 client and install it.
 24. once the twilio-esp32-client is install, you go to Arduino then click on Files > Examples > twilio-esp32-client > send_sms (this will give you the entire template without having to in all the codes. Youl'll only need to plug in where it says "REPLACE_WITH...ect"
-25. 
+25. I plugged in the ssid and the password which was my wifi and my wifi password then I plugged in the account_sid, auth_token, the from_number(the twilio number), the to_number(which is my number), and the message which I put *Hello from my ESP32 (via twilio)*
+26. once the code is done, I click on *upload* icon on Arduino so that the ESP32 can connect to the Twilio's api
+27. You will then go to Serial Monitor to see if the connection was complete.
+28. And then you are done.
     
 
 
@@ -62,3 +65,8 @@ Note your problems or errors here.  Google any error you may come across, and no
 Example
 1. Arduino code will not load on ESP32 Cam.
    Answer: Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
+
+Some of the problems I came across was first the number I bought from Twilio would not send an SMS to my number and also it wouldn't allow me to select my phone number as the receiver of the test message. 
+On Arduino, when I clicked on *Serial Monitor* it kept showing *connecting, conecting conecting* this meant that I basically had to put my Wfif and password for it to work. 
+Because I was still having issues with sending sms from the Twilio number to my phone I ended up closing that account (if it even closed 🤡) and created a whole new account. I did the entire process all over again and that is when I was able to see a test text message sent from Twilio to my number(well google voice 👹). 
+The biggest problem of my project was that the ESP32 was not able to connect to Twlio's api, it kept showing connection failed. I made sure that I put in all the correct information and still I would get a *connection failed*. However the ESP32 did connect to my Wifi.
